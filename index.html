@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rosaly's Home - Moody Bistro Chic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eecd2b",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#0a0a0a", // Deepened for the "Moody" vibe
+                        "bistro-grey": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Epilogue', sans-serif;
+        }
+        .brass-gradient {
+            background: linear-gradient(135deg, #eecd2b 0%, #b89b1c 100%);
+        }
+        .vignette-overlay {
+            background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-background-dark">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/10 backdrop-blur-md bg-background-dark/80">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+<h1 class="text-2xl font-black tracking-tighter text-white">ROSALY'S</h1>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Menu</a>
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Drinks</a>
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">The Kitchen</a>
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Private Events</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:block brass-gradient text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider hover:brightness-110 transition-all">
+                    Book Now
+                </button>
+<div class="size-10 rounded-full border border-white/20 bg-center bg-cover" data-alt="Portrait of a sophisticated restaurant guest" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlLYsk5CB_mk0RxTXrAT93MewITnfiBQ4oJxX-icsTsM2MH-wyrkh9l2eOe99yRwh4kUMoOv8p18KAX3OReTFJqshF-rzRdu9uFli0dggRJAMhz22PvFqmk4D_qbjMaHRWRFXP76VdUTAjuTuGWd0ltCsQwuwJ9fhfW8avEoV0kI68Drnr-P__szLmQQhlmoAfEX4dFNgNEeklkwu2a1YbwxKBie2XVJWVr5mjxSu4u0py0_aJx-IVvJT_x4sx4xq2_9NE5n2iFtQX')"></div>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<!-- Background "Video" Style Image -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/50 z-10"></div>
+<div class="vignette-overlay absolute inset-0 z-20"></div>
+<img alt="Moody cocktail scene" class="w-full h-full object-cover scale-105" data-alt="Dark moody shot of high-end cocktails being prepared at a bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuYvXcU8ynRsHNFuoYHrrTcjIZcqGXextryThZUM57lTsfVJvqHv5lGNxh370YUCH7pjYbJPy4o6SFTtbMjFqdwlLKAYBt7E-K-9tWZf3TD-ztj0Xx6mzx86A77QizrAnvDR6KH1pCKz3dQhAuUWPY-JGb4nTwjwg8d23n_U5-u-5MDf8RiJpu2g20mnFfXVJCzvlgm-nefGifIvz1PwjowC4ClhOqd9tfPFF5Qhmrn8la4CsGYRvpVgjeuPslWPL1tITy89gFiTmC"/>
+</div>
+<div class="relative z-30 text-center px-4 max-w-4xl mx-auto">
+<span class="text-primary text-sm font-bold uppercase tracking-[0.4em] mb-4 block">Zürich, Switzerland</span>
+<h1 class="text-white text-6xl md:text-8xl font-black leading-tight tracking-[-0.04em] mb-8">
+                Soul Food &amp; <br/><span class="text-primary italic">Fine Drinks</span>
+</h1>
+<p class="text-white/80 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-10">
+                Experience a sophisticated night-time atmosphere where Swiss tradition meets modern mixology in the heart of the city.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-10 py-4 brass-gradient text-background-dark font-bold rounded-xl uppercase tracking-widest hover:scale-105 transition-transform">
+                    Explore the Menu
+                </button>
+<button class="w-full sm:w-auto px-10 py-4 border border-white/30 text-white font-bold rounded-xl uppercase tracking-widest hover:bg-white/10 transition-colors">
+                    Watch the film
+                </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 animate-bounce">
+<span class="material-symbols-outlined text-white/50 text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Split Screen Section: The Kitchen -->
+<section class="flex flex-col md:flex-row w-full min-h-screen bg-bistro-grey">
+<div class="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center order-2 md:order-1">
+<span class="text-primary font-bold tracking-[0.3em] uppercase mb-6 block">Gastronomy</span>
+<h2 class="text-white text-5xl font-black mb-8 leading-tight">The Kitchen</h2>
+<p class="text-white/60 text-lg leading-relaxed mb-10">
+                Our culinary philosophy is rooted in Swiss seasonality. We reinterpret classic Zurich dishes with international flair, using locally-sourced ingredients from the Limmat valley.
+            </p>
+<div class="space-y-8">
+<div class="flex gap-6 group">
+<div class="text-primary text-2xl font-black tracking-tighter">01</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Modern Zürcher Geschnetzeltes</h4>
+<p class="text-white/40 text-sm">Veal tenderloin, cream mushroom sauce, reimagined potato rosti.</p>
+</div>
+</div>
+<div class="flex gap-6 group border-t border-white/10 pt-8">
+<div class="text-primary text-2xl font-black tracking-tighter">02</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Limmat River Trout</h4>
+<p class="text-white/40 text-sm">Slow-cooked trout, horseradish foam, dill oil, cucumber carpaccio.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-[400px] md:h-auto overflow-hidden order-1 md:order-2">
+<img alt="Gourmet Plating" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="High contrast close up shot of a gourmet plated Swiss dish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUHY_Oj-0Ilb6_tFo5LO_HzxMni5RGnu9-oUbBCjlP0EI4Re4La1gYfiP6izrXAR6yhRPwHIZG7NjcrL7tkafDtkW9t-AlNrSOrKuYdzziIukaOA-khlyV2TPkygnmKuJfI38BON45Grk45PprOuZ8coae_BTsB0S5C92MdPempc_OpGdhHmmiMh223ZdfuHOSiDU3rJMZ1ADFwlmsBh8PFfxoSYbN70uRQE2oKyCzfOTTFmuZPRbcTN5C-iHYnnbZZ-ezdPPoTeaf"/>
+</div>
+</section>
+<!-- Split Screen Section: The Bar -->
+<section class="flex flex-col md:flex-row w-full min-h-screen bg-background-dark">
+<div class="w-full md:w-1/2 h-[400px] md:h-auto overflow-hidden">
+<img alt="Cocktail Mixology" class="w-full h-full object-cover brightness-75 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Dramatic lighting on a crystal glass cocktail with orange peel garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw9BFQRYmrRT-Dw4ik7gqn5Hkj0ya4wStoadeifgz4y9s1dUCpiZCyq2DblyKpn-lgIq8kkVwK6lx3tmQZ_vBQMtRXK9dnHm75XZGu0GavpkCfLpcXtQW8v68goh8q2OxDpM6AEdf4FWaw5TLUZXHcN3VkFES42vcO9jKrwUdh9R7-z55JQBqBuUiwOzTrIW4Wk4N084xeI3910oLBdrIxEcBF1BtzkRCndondxD1GAQsWDF7eGgv_HhL-ZzjaycR6uAcib2EcoGCx"/>
+</div>
+<div class="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
+<span class="text-primary font-bold tracking-[0.3em] uppercase mb-6 block">Mixology</span>
+<h2 class="text-white text-5xl font-black mb-8 leading-tight">The Bar</h2>
+<p class="text-white/60 text-lg leading-relaxed mb-10">
+                The heart of Rosaly's beats at the counter. Our mixologists blend house-made infusions with premium spirits to create liquid art that complements our moody bistro chic ambiance.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="p-6 border border-white/10 rounded-xl hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-primary mb-4">local_bar</span>
+<h4 class="text-lg font-bold text-white mb-2 uppercase">Signatures</h4>
+<p class="text-white/40 text-sm">Experimental blends unique to Rosaly's Zurich.</p>
+</div>
+<div class="p-6 border border-white/10 rounded-xl hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-primary mb-4">wine_bar</span>
+<h4 class="text-lg font-bold text-white mb-2 uppercase">Wine Cellar</h4>
+<p class="text-white/40 text-sm">A curated selection of European and Swiss vintages.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reservation Brass CTA Section -->
+<section class="brass-gradient py-20 md:py-32 px-6">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/2">
+<h2 class="text-background-dark text-5xl md:text-7xl font-black tracking-tighter mb-6 leading-tight">
+                    Experience <br/>Rosaly's Tonight.
+                </h2>
+<p class="text-background-dark/80 text-xl font-medium max-w-lg leading-relaxed">
+                    Join us for an evening of sophisticated soul food and fine drinks. Book your table in advance to secure your spot in Zurich's most intimate bistro.
+                </p>
+<div class="mt-10 flex gap-10">
+<div>
+<p class="text-background-dark text-xs font-black uppercase tracking-widest mb-2">Location</p>
+<p class="text-background-dark/70 font-bold">Stauffacherstrasse 101<br/>8004 Zürich</p>
+</div>
+<div>
+<p class="text-background-dark text-xs font-black uppercase tracking-widest mb-2">Hours</p>
+<p class="text-background-dark/70 font-bold">Mon - Sun<br/>17:00 - 01:00</p>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 bg-background-dark rounded-2xl p-8 md:p-12 shadow-2xl">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-white/50 text-xs font-bold uppercase tracking-widest">Date</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="text-white/50 text-xs font-bold uppercase tracking-widest">Guests</label>
+<select class="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all">
+<option>2 Persons</option>
+<option>3 Persons</option>
+<option>4 Persons</option>
+<option>5+ Persons</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-white/50 text-xs font-bold uppercase tracking-widest">Time</label>
+<div class="grid grid-cols-3 gap-3">
+<button class="py-2 border border-white/10 rounded hover:border-primary text-xs font-bold uppercase tracking-widest transition-all" type="button">18:00</button>
+<button class="py-2 border border-primary bg-primary text-background-dark rounded text-xs font-bold uppercase tracking-widest transition-all" type="button">19:30</button>
+<button class="py-2 border border-white/10 rounded hover:border-primary text-xs font-bold uppercase tracking-widest transition-all" type="button">21:00</button>
+</div>
+</div>
+<button class="w-full py-4 brass-gradient text-background-dark font-black uppercase tracking-[0.2em] rounded-xl hover:scale-[1.02] transition-transform shadow-lg">
+                        Confirm Reservation
+                    </button>
+<p class="text-center text-white/30 text-xs uppercase font-bold tracking-widest">
+                        Cancellation policy applies
+                    </p>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-white/5 py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">restaurant</span>
+<span class="text-lg font-black tracking-tighter text-white">ROSALY'S</span>
+</div>
+<div class="flex gap-8">
+<a class="text-white/40 hover:text-primary transition-colors uppercase text-xs font-bold tracking-widest" href="#">Instagram</a>
+<a class="text-white/40 hover:text-primary transition-colors uppercase text-xs font-bold tracking-widest" href="#">Facebook</a>
+<a class="text-white/40 hover:text-primary transition-colors uppercase text-xs font-bold tracking-widest" href="#">Press</a>
+<a class="text-white/40 hover:text-primary transition-colors uppercase text-xs font-bold tracking-widest" href="#">Legal</a>
+</div>
+<div class="text-white/20 text-xs font-medium">
+                © 2024 Rosaly's Restaurant Zurich. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
